@@ -1,0 +1,25 @@
+Attached is a python code sample for loading the data into python as three numpy arrays:
+
+x_train: a matrix of size 15485 x 500 (genes x features)
+y_train: a vector of length 15485
+x_test: a matrix of size 3871 x 500 (genes x features)
+From this example, you should continue according to the following steps:
+
+Define a classifier using sklearn
+Assess its accuracy using cross-validation (optional)
+Fine tune the parameters and return to 2 until happy (optional)
+Create submission file. Should be similar to y_train.csv.
+Submit at kaggle.com and sit back.
+The submission csv file should look like the following:
+
+GeneId,Prediction
+1,0.200000
+2,0.400000
+3,0.800000
+4,0.000000
+5,0.000000
+6,1.000000
+...
+3870,0.000000
+3871,0.400000
+The first item on each row is the test gene ID. The second item is the probability given by your model.
